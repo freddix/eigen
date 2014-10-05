@@ -1,11 +1,11 @@
 Summary:	C++ template library for linear algebra
 Name:		eigen
-Version:	3.2.1
+Version:	3.2.2
 Release:	1
 License:	LGPL v3+ or GPL v2+
 Group:		Development/Libraries
 Source0:	http://bitbucket.org/eigen/eigen/get/%{version}.tar.bz2
-# Source0-md5:	ece1dbf64a49753218ce951624f4c487
+# Source0-md5:	fc2e814ae449d16b331f7e1f4e272bd3
 Patch0:		%{name}-buildtype.patch
 URL:		http://eigen.tuxfamily.org/
 BuildRequires:	cmake
@@ -18,7 +18,7 @@ and related algorithms. It is versatile, fast, elegant and
 compiler-friendly.
 
 %prep
-%setup -qn eigen-eigen-6b38706d90a9
+%setup -qn eigen-eigen-1306d75b4a21
 %patch0 -p1
 
 %build
